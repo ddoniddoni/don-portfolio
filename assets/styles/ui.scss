@@ -4,6 +4,7 @@
 @use "./@abstracts" as *;
 @use "./@layout" as *;
 @use "./@variables" as *;
+@use "./@components/" as *;
 
 html {
   scroll-behavior: smooth;
