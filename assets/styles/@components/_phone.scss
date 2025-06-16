@@ -1,31 +1,48 @@
 .phone {
   position: relative;
-  min-width: 300px;
-  min-height: 600px;
-  background: #000;
-  border-radius: 40px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-  border: 2px solid #333;
   overflow: hidden;
   margin: 40px auto;
-
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 600px;
+  min-width: 300px;
+  border-radius: 40px;
+  background-color: rgb(87, 177, 117);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  border: 5px solid #333;
 }
 
-.notch {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  padding: 10px;
-  margin-block-start: 8px;
-  transform: translateX(-50%);
-  width: 180px;
-  height: 30px;
-  background-color: #111;
-  border-radius: 15px;
+.top {
   z-index: 2;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  .agency {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 12px;
+  }
+  .notch {
+    flex: 4;
+    min-width: 100px;
+    min-height: 26px;
+    background-color: #111;
+    border-radius: 15px;
+  }
+  .status {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 12px;
+  }
 }
 
 .screen {
@@ -34,21 +51,4 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(87, 177, 117);
-  box-sizing: border-box;
-}
-
-.content {
-  text-align: center;
-  color: #333;
-
-  h2 {
-    margin: 0;
-    font-size: 1.5rem;
-  }
-
-  p {
-    font-size: 1rem;
-    margin-top: 0.5rem;
-  }
 }
